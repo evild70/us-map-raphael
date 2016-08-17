@@ -28,6 +28,7 @@
     //Draw Map and store Raphael paths
     for (var state in usMap) {
       usRaphael[state] = R.path(usMap[state]).attr(attr);
+      usRaphael['ak'] = R.path(usMap['ak'].attr({"fill": "#ff0000"}));
     }
     
     //Do Work on Map
